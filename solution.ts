@@ -40,6 +40,40 @@
 
 
 //Problem 4
+// type Item = {
+//     title:string;
+//     rating : number;
+// }
+// const filterByRating = (arrItem : Item[]) : Item[] =>{
+//     return arrItem.filter(item => item.rating >=4)
+// }
+
+
+
+//Problem 5: 
+// type User = {
+//     id : number;
+//     name: string;
+//     email : string;
+//     isActive : boolean;
+// }
+
+// const filterActiveUsers = (user : User[]): User[] =>{
+//     return  user.filter(newUser => newUser.isActive === true);
+// }
+
+//Problem 6:
+
+interface Book {
+    title : string;
+    author : string;
+    publisherYear : number;
+    isAvailable : boolean;
+}
+
+function printBookDetails(book : Book){
+    console.log(`Title: ${book.title}, Author: ${book.author}, Published: ${book.publisherYear}, Available: ${book.isAvailable ? "Yes" : 'No'} `)
+}
 
 
 
